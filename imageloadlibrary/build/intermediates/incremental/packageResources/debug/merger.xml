@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\gitHubProject\myproject\CSDN_NEWS\imageloadlibrary\src\main\res"/><source path="E:\gitHubProject\myproject\CSDN_NEWS\imageloadlibrary\build\generated\res\rs\debug"/><source path="E:\gitHubProject\myproject\CSDN_NEWS\imageloadlibrary\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="E:\gitHubProject\myproject\CSDN_NEWS\imageloadlibrary\src\debug\res"/></dataSet><mergedItems/></merger>
