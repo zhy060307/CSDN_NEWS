@@ -16,7 +16,7 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        TabItem tab = new TabItem();
+        TabItemFragment tab = new TabItemFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(CConfigKey.NEWS_TYPE, position + 1);
         tab.setArguments(bundle);

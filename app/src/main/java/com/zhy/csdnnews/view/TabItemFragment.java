@@ -25,7 +25,7 @@ import me.maxwin.view.XListView;
 
 import static me.maxwin.view.XListView.IXListViewListener;
 
-public class TabItem extends Fragment implements IXListViewListener {
+public class TabItemFragment extends Fragment implements IXListViewListener {
 
     private int newsType = 1;
     private int curPage = Constaint.NEWS_TYPE_YEJIE;
@@ -38,7 +38,7 @@ public class TabItem extends Fragment implements IXListViewListener {
     private NewsItemAdapter newsItemAdapter;
     private MyPreference myPreference;
 
-    public TabItem() {
+    public TabItemFragment() {
         parser = new NewsParser();
 
     }
