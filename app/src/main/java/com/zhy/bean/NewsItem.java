@@ -1,6 +1,8 @@
 package com.zhy.bean;
 
-public class NewsItem {
+import java.io.Serializable;
+
+public class NewsItem implements Serializable{
     private int id;
     private String title;
     private String content;

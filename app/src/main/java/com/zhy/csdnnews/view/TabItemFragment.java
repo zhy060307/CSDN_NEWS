@@ -1,5 +1,6 @@
 package com.zhy.csdnnews.view;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,6 +28,7 @@ import static me.maxwin.view.XListView.IXListViewListener;
 
 public class TabItemFragment extends Fragment implements IXListViewListener {
 
+    public static final String NEWS_ITEM_TAG = "news_item";
     private int newsType = 1;
     private int curPage = Constaint.NEWS_TYPE_YEJIE;
 
@@ -70,7 +72,11 @@ public class TabItemFragment extends Fragment implements IXListViewListener {
         xListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                NewsItem newsItem = newsList.get(position - 1);
+                Intent intent = new Intent();
+                intent.putExtra(NEWS_ITEM_TAG,newsItem);
+                intent.setClass(getActivity(),NewsDetailActivity.class);
+                startActivity(intent);
             }
         });
 
